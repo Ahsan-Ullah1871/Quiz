@@ -24,7 +24,16 @@ let potQandA = (data) => {
 
 		let QNASection = document.getElementById("QNASection");
 		let divQuiz = document.createElement("div");
-		divQuiz.className = "Quiz";
+        divQuiz.className = "Quiz";
+        
+        let pot = [];
+
+		for (var a = [0, 1, 2, 3], i = a.length; i--; ) {
+			let dekhi = Math.floor(Math.random() * (i + 1));
+			var random = a.splice(dekhi, 1);
+			pot.push(random[0]);
+		} 
+ 
 
 		divQuiz.innerHTML = `<div class="Question"><li>${potQn}</li></div>
             
@@ -33,10 +42,10 @@ let potQandA = (data) => {
         
               <ol class="AnswersList">
 				
-               <li> <button  onclick=selectAns(event.target)>${potAn[0]}</button></li>
-               <li> <button  onclick=selectAns(event.target)>${potAn[1]}</button></li>
-               <li> <button  onclick=selectAns(event.target)>${potAn[2]}</button></li>
-               <li> <button  onclick=selectAns(event.target)>${potAn[3]}</button></li>
+               <li> <button  onclick=selectAns(event.target)>${potAn[pot[0]]}</button></li>
+               <li> <button  onclick=selectAns(event.target)>${potAn[pot[1]]}</button></li>
+               <li> <button  onclick=selectAns(event.target)>${potAn[pot[2]]}</button></li>
+               <li> <button  onclick=selectAns(event.target)>${potAn[pot[3]]}</button></li>
                
  
                 </ol>
