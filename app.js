@@ -1,4 +1,19 @@
+/*
+Here some short word:
+Q/Qn = Question
+N = And
+A/An = Answer
+QnA/QandA/QNA == Question and Answer;
+*/
+
+
+
+
+
+
+
 // Qiz API call
+
 fetch("https://opentdb.com/api.php?amount=10&category=9&type=multiple")
 	.then((response) => response.json())
 	.then((data) => {
@@ -16,24 +31,33 @@ let potQandA = (data) => {
 		let potQn = allData.question;
 		let potAn = [allData.correct_answer];
 
+		// send data of all Correct answers in "potAllCorrectAnswer" array:
 		potAllCorrectAnswer.push(allData.correct_answer);
 
+        // Send Data of inCorrect answers to "PotAn" array:
 		allData.incorrect_answers.forEach((inCorrectAn) =>
 			potAn.push(inCorrectAn)
 		);
 
+		// Create a random number for call random answer :
+		let potNumber = [];
+
+		for (
+			var NumberArray = [0, 1, 2, 3], i = NumberArray.length;
+			i--;
+
+		) {
+			let oneNumber = Math.floor(Math.random() * (i + 1));
+			var random = a.splice(oneNumber, 1);
+			potNumber.push(random[0]);
+		}
+
+
+
+		// Create data for QandA section of HTML file:
 		let QNASection = document.getElementById("QNASection");
 		let divQuiz = document.createElement("div");
-        divQuiz.className = "Quiz";
-        
-        let pot = [];
-
-		for (var a = [0, 1, 2, 3], i = a.length; i--; ) {
-			let dekhi = Math.floor(Math.random() * (i + 1));
-			var random = a.splice(dekhi, 1);
-			pot.push(random[0]);
-		} 
- 
+		divQuiz.className = "Quiz";
 
 		divQuiz.innerHTML = `<div class="Question"><li>${potQn}</li></div>
             
@@ -42,10 +66,18 @@ let potQandA = (data) => {
         
               <ol class="AnswersList">
 				
-               <li> <button  onclick=selectAns(event.target)>${potAn[pot[0]]}</button></li>
-               <li> <button  onclick=selectAns(event.target)>${potAn[pot[1]]}</button></li>
-               <li> <button  onclick=selectAns(event.target)>${potAn[pot[2]]}</button></li>
-               <li> <button  onclick=selectAns(event.target)>${potAn[pot[3]]}</button></li>
+               <li> <button  onclick=selectAns(event.target)>${
+				potAn[potNumber[0]]
+			}</button></li>
+               <li> <button  onclick=selectAns(event.target)>${
+				potAn[potNumber[1]]
+			}</button></li>
+               <li> <button  onclick=selectAns(event.target)>${
+				potAn[potNumber[2]]
+			}</button></li>
+               <li> <button  onclick=selectAns(event.target)>${
+				potAn[potNumber[3]]
+			}</button></li>
                
  
                 </ol>
