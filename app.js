@@ -48,7 +48,7 @@ let potQandA = (data) => {
 
 		) {
 			let oneNumber = Math.floor(Math.random() * (i + 1));
-			var random = a.splice(oneNumber, 1);
+			var random = NumberArray.splice(oneNumber, 1);
 			potNumber.push(random[0]);
 		}
 
