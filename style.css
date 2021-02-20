@@ -43,7 +43,7 @@ font-size: 30px;
     background-color:crimson;
     padding:20px;
     display:inline-block;
-    width: 400px; 
+    width: 50%; 
     border-radius: 29%;
     box-shadow: 10px 10px 20px black ;
     margin-left:50px ;
@@ -60,6 +60,7 @@ font-size: 30px;
 
  .Answers ol{
      display : flex;
+     flex-wrap: wrap;
      margin: 35px 50px;
  }
  .Answers li{
