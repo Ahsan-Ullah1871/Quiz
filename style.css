@@ -1,0 +1,139 @@
+/* 
+font-family: 'Acme', sans-serif;
+font-family: 'Akaya Kanadaka', cursive;
+font-family: 'Noto Serif', serif;
+font-family: 'Patrick Hand', cursive;
+
+*/
+
+
+.container{
+    width: 80%;
+    background-color: coral;
+    margin: 0 auto;
+    padding:10px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding: 20px;
+
+}
+
+.logo img{
+    height: 100px;
+}
+
+.navBar ul{
+    list-style: none;
+    display:flex;
+}
+.navBar li{
+ margin: 0 20px;
+ font-family: 'Patrick Hand', cursive;
+font-size: 30px;
+ }
+.header-text{
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+   margin-bottom: 50px;
+}
+.Question{
+    background-color:crimson;
+    padding:20px;
+    display:inline-block;
+    width: 400px; 
+    border-radius: 29%;
+    box-shadow: 10px 10px 20px black ;
+    margin-left:50px ;
+    margin-top: 40px;
+    color: antiquewhite;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+
+ }
+
+.Answers{
+    margin: 0 90px;
+}
+
+ .Answers ol{
+     display : flex;
+     margin: 35px 50px;
+ }
+ .Answers li{
+     margin: 0 20px;
+     font-family: 'Akaya Kanadaka', cursive;
+
+     
+ }
+.Answers button{
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid crimson;
+}
+ .added{
+     background-color:rgb(222, 138, 135);
+     color: rgb(240, 239, 239);
+     border: none;
+ }
+
+  hr{
+      margin-top: 50px;
+     width: 25%;
+     border-style: none;
+     border-top-style: dotted;
+     border-width: 10px;
+     border-color: gray;
+ }
+
+
+ .result-btn-div{
+     height: 100px;
+     display: flex;
+     justify-content:center;
+     align-items:center;
+     margin: 20px 0px;
+
+
+ }
+ #result-btn,#next-btn{
+     background-color: crimson;
+     color: bisque;
+     border: none;
+     padding: 10px;
+     border-radius: 12px;
+     font-size: 18px;
+     font-family: 'Acme', sans-serif;
+
+ }
+
+
+#result-btn:hover,#next-btn:hover{
+    background-color:rgba(220, 20, 60, 0);
+    border: 3px solid crimson;
+}
+
+#result-section{
+   display: none;
+}
+
+.resultDiv{
+    background-color:rgb(248, 182, 60);
+    color: rgb(17, 17, 17);
+    padding: 20px;
+    width: 30%;
+    margin: 0 auto;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 30px;
+
+ 
+
+     
+}
+#mark-header{
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+}

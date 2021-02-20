@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Akaya+Kanadaka&family=Noto+Serif&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="container" class="container">
+
+        <div class="header">
+            <nav>
+                <div class="logo">
+                     <img src="images/log.png" alt="">
+                </div>
+                <div class="navBar">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Marks</li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div id="header-text" class="header-text">
+                <h2>Verify yourself !!
+                </h2>
+                <h5>Guess your position by answering 10 general knowledge questions.</h5>
+                <hr>
+            </div>
+        </div>
+        
+        <section id="QNASection">
+
+        </section>
+
+        <hr id="hr">
+        <div id="result-btn-div" class="result-btn-div">
+            <button id="result-btn">Show Your Result</button>
+            <span class="material-icons">
+                exit_to_app
+            </span>
+        </div>
+
+    </div>
+
+    <section id="result-section">
+        <div class="resultDiv">
+
+            <div class="marks">
+                <h3 id="mark-header">Marks</h3>
+                <h4>Right Answer: <span id="rightAnswer"></span> </h4>
+                <h4>Wrong Answer: <span id="wrongAnswer"></span> </h4>
+            </div>
+            <div class="result-footer">
+                <h5>
+                    Thank you so much for taking the test. <br>
+                    Don't worry about your results. Always try to do better.
+                </h5>
+            </div>
+            <button id="next-btn">Next Challenge</button>
+        </div>
+    </section>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
