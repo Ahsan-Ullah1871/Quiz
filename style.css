@@ -58,7 +58,7 @@ font-size: 30px;
     margin: 0 90px;
 }
 
- .Answers ol{
+ .AnswersList{
      display : flex;
      flex-wrap: wrap;
      margin: 35px 50px;
@@ -137,6 +137,16 @@ font-size: 30px;
     text-align: center;
     font-family: 'Acme', sans-serif;
     font-size: 30px;
+}
+
+
+
+#AnswerTable{
+    background-color: gray;
+    width: 60%;
+    margin:0 auto;
+    padding: 10px;
+    display: none;
 }
 
 .footer-text{
