@@ -137,3 +137,10 @@ font-size: 30px;
     font-family: 'Acme', sans-serif;
     font-size: 30px;
 }
+
+.footer-text{
+    text-align: center;
+    background-color:dimgray;
+    color: aliceblue;
+    padding: 10px;
+}
